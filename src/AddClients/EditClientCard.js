@@ -4,13 +4,31 @@ import "./EditClientCard.css";
 
 const EditClientCard = props => {
   const [user, setUser] = useState(props.currentUser);
-  console.log(user);
+  // console.log(user);
+
+  const car = user.car[0];
+  const [specificationCar, setCar] = useState(car);
+
+  const order = specificationCar.order;
+  const [characteristicOrder, setOrder] = useState(order);
+  console.log(characteristicOrder);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
-    console.log(name, value);
 
     setUser({ ...user, [name]: value });
+  };
+
+  const handleInputChangeCar = event => {
+    const { name, value } = event.target;
+
+    setCar({ ...specificationCar, [name]: value });
+  };
+
+  const handleInputChangeOrder = event => {
+    const { name, value } = event.target;
+
+    setOrder({ ...characteristicOrder, [name]: value });
   };
 
   useEffect(() => {
@@ -72,50 +90,50 @@ const EditClientCard = props => {
       <input
         type="text"
         name="make"
-        value={user.car[0].make}
-        onChange={handleInputChange}
+        value={specificationCar.make}
+        onChange={handleInputChangeCar}
       />
       <label>model</label>
       <input
         type="text"
         name="model"
-        value={user.car[0].model}
-        onChange={handleInputChange}
+        value={specificationCar.model}
+        onChange={handleInputChangeCar}
       />
       <label>year</label>
       <input
         type="text"
         name="year"
-        value={user.car[0].year}
-        onChange={handleInputChange}
+        value={specificationCar.year}
+        onChange={handleInputChangeCar}
       />
       <label>vin</label>
       <input
         type="text"
         name="vin"
-        value={user.car[0].vin}
-        onChange={handleInputChange}
+        value={specificationCar.vin}
+        onChange={handleInputChangeCar}
       />
       <label>date</label>
       <input
         type="text"
         name="date"
-        value={user.car[0].order.date}
-        onChange={handleInputChange}
+        value={characteristicOrder.date}
+        onChange={handleInputChangeOrder}
       />
       <label>orderAmount</label>
       <input
         type="text"
         name="orderAmount"
-        value={user.car[0].order.orderAmount}
-        onChange={handleInputChange}
+        value={characteristicOrder.orderAmount}
+        onChange={handleInputChangeOrder}
       />
       <label>orderStatus</label>
       <input
         type="text"
         name="orderStatus"
-        value={user.car[0].order.orderStatus}
-        onChange={handleInputChange}
+        value={characteristicOrder.orderStatus}
+        onChange={handleInputChangeOrder}
       />
       <ul>
         <li>

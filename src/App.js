@@ -111,7 +111,9 @@ const App = () => {
 
   const compareDataClients = client => {
     let clientNew = {};
+
     let flagCompare = false;
+
     users.forEach(clientData => {
       if (
         clientData.firstName === client.firstName &&
