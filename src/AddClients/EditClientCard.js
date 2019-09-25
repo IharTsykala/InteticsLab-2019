@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 
+import "./EditClientCard.css";
+
 const EditClientCard = props => {
   const [user, setUser] = useState(props.currentUser);
+  console.log(user);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
+    console.log(name, value);
 
     setUser({ ...user, [name]: value });
   };
@@ -15,6 +19,7 @@ const EditClientCard = props => {
 
   return (
     <form
+      className="editCard"
       onSubmit={event => {
         event.preventDefault();
 
@@ -112,13 +117,19 @@ const EditClientCard = props => {
         value={user.car[0].order.orderStatus}
         onChange={handleInputChange}
       />
-      <button>Update user</button>
-      <button
-        onClick={() => props.setEditing(false)}
-        className="button muted-button"
-      >
-        Cancel
-      </button>
+      <ul>
+        <li>
+          <button>Update user</button>
+        </li>
+        <li>
+          <button
+            onClick={() => props.setEditing(false)}
+            className="button muted-button"
+          >
+            Cancel
+          </button>
+        </li>
+      </ul>
     </form>
   );
 };

@@ -1,0 +1,29 @@
+.clientData {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+
+.titleInfo {
+  display: grid;
+  justify-items: right;
+  margin-right: 50px;
+}
+
+div.valueInfo {
+  display: grid;
+  justify-items: left;
+  margin-left: 50px;
+  position: relative;
+}
+
+.changeCard {
+  display: grid;
+  position: absolute;
+  right: 300px;
+  top: 100px;
+}
+
+/* .changeCard button {
+  height: 50px;
+} */

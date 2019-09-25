@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./index.css";
+
 const ClientCardsData = props => {
   console.log(props.currentClient);
   return (
-    <>
-      <div>
+    <div className="clientData">
+      <div className="titleInfo">
         <div>Name</div>
         <div>Username</div>
         <div>dateOfBirth</div>
@@ -24,7 +26,7 @@ const ClientCardsData = props => {
 
       {props.currentClient.length > 0 ? (
         props.currentClient.map(user => (
-          <div key={user.id}>
+          <div key={user.id} className="valueInfo">
             <div>{user.firstName}</div>
             <div>{user.lastName}</div>
             <div>{user.dateOfBirth}</div>
@@ -41,7 +43,7 @@ const ClientCardsData = props => {
             <div>{user.car[0].order.orderAmount}</div>
             <div>{user.car[0].order.orderStatus[0]}</div>
 
-            <div>
+            <div className="changeCard">
               <button
                 onClick={() => {
                   props.editRow(user);
@@ -64,7 +66,7 @@ const ClientCardsData = props => {
           <div colSpan={3}>No users</div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

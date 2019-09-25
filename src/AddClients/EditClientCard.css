@@ -1,0 +1,12 @@
+.editCard li {
+  display: inline;
+}
+
+.editCard ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.editCard button {
+  width: 50%;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./AddClientCard.css";
+
 const AddClients = props => {
   const initialFormState = {
     id: null,

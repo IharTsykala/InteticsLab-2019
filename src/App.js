@@ -152,12 +152,12 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>InteticsLab 2019</h1>
+      <h1 className="title">InteticsLab 2019</h1>
       <div className="main">
-        <div className="flex-large">
+        <div className="rulerData">
           {editing ? (
             <div>
-              <h2>Edit user</h2>
+              <h2>Edit client</h2>
               <EditClientCards
                 editing={editing}
                 setEditing={setEditing}
@@ -167,7 +167,7 @@ const App = () => {
             </div>
           ) : (
             <div>
-              <h2>Add user</h2>
+              <h2>Add client</h2>
               <AddClients
                 addUser={addUser}
                 clientsList={users}
@@ -176,9 +176,8 @@ const App = () => {
             </div>
           )}
         </div>
-        ;
-        <div className="clientCards">
-          <h2>View users</h2>
+        <div className="viewData">
+          <h2>View card</h2>
           <ClientCardsData
             currentClient={currentClient}
             editRow={editRow}
