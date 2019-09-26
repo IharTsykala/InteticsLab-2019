@@ -3,7 +3,7 @@ import React from "react";
 import "./index.css";
 
 const ClientCardsData = props => {
-  console.log(props.currentClient);
+  // console.log(props.currentClient);
   return (
     <div className="clientData">
       <div className="titleInfo">
