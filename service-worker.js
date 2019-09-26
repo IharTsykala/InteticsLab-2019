@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/InteticsLab-2019-gh-pages/precache-manifest.a84003a64c359046a294601792e04f55.js"
+  "/InteticsLab-2019-gh-pages/precache-manifest.c33ee2aa0237b9f6a166ba5c8a88a4d3.js"
 );
 
 self.addEventListener('message', (event) => {
