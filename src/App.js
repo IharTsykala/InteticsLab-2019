@@ -121,7 +121,6 @@ const App = () => {
       ) {
         clientNew = Object.assign({}, clientData);
         flagCompare = true;
-        setCurrentUser([clientNew]);
       }
     });
     if (flagCompare) {

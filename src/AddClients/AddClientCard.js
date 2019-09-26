@@ -54,21 +54,25 @@ const AddClients = props => {
         }
       }}
     >
-      <label>Name</label>
+      <label>First Name</label>
       <input
         type="text"
         name="firstName"
         value={user.firstName}
         onChange={handleInputChange}
       />
-      <label>Username</label>
+      <label>Last Name</label>
       <input
         type="text"
         name="lastName"
         value={user.lastName}
         onChange={handleInputChange}
       />
-      <button>Add new user</button>
+      <button>Add client</button>
+      <p>
+        If the client is already in the database, his (her) individual
+        information will be shown in the "View Card" form.
+      </p>
     </form>
   );
 };

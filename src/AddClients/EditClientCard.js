@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 
 import "./EditClientCard.css";
 
+// let flagInputUser = false;
+// let flagInputCar = false;
+// let flagInputOrder = false;
+
 const EditClientCard = props => {
   const [user, setUser] = useState(props.currentUser);
   // console.log(user);
@@ -11,10 +15,23 @@ const EditClientCard = props => {
 
   const order = specificationCar.order;
   const [characteristicOrder, setOrder] = useState(order);
-  console.log(characteristicOrder);
+
+  // const toggleFlagInput = input => {
+  //   if (input === "flagInputUser") {
+  //     flagInputUser = true;
+  //   }
+  //   if (input === "flagInputCar") {
+  //     flagInputCar = true;
+  //   }
+  //   if (input === "flagInputOrder") {
+  //     flagInputOrder = true;
+  //   }
+  // };
 
   const handleInputChange = event => {
     const { name, value } = event.target;
+
+    // toggleFlagInput("flagInputUser");
 
     setUser({ ...user, [name]: value });
   };
@@ -22,11 +39,15 @@ const EditClientCard = props => {
   const handleInputChangeCar = event => {
     const { name, value } = event.target;
 
+    // toggleFlagInput("flagInputCar");
+
     setCar({ ...specificationCar, [name]: value });
   };
 
   const handleInputChangeOrder = event => {
     const { name, value } = event.target;
+
+    // toggleFlagInput("flagInputOrder");
 
     setOrder({ ...characteristicOrder, [name]: value });
   };
@@ -42,6 +63,10 @@ const EditClientCard = props => {
         event.preventDefault();
 
         props.updateUser(user.id, user);
+
+        // if (flagInputUser) props.updateUser(user.id, user);
+        // if (flagInputCar) props.updateUser(user.id, specificationCar);
+        // if (flagInputOrder) props.updateUser(user.id, characteristicOrder);
       }}
     >
       <label>firstName</label>
@@ -137,7 +162,7 @@ const EditClientCard = props => {
       />
       <ul>
         <li>
-          <button>Update user</button>
+          <button>Update client data</button>
         </li>
         <li>
           <button

@@ -7,8 +7,8 @@ const ClientCardsData = props => {
   return (
     <div className="clientData">
       <div className="titleInfo">
-        <div>Name</div>
-        <div>Username</div>
+        <div>firstName Name</div>
+        <div>Last Name</div>
         <div>dateOfBirth</div>
         <div>address</div>
         <div>phone</div>
