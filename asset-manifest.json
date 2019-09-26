@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/InteticsLab-2019-gh-pages/static/css/main.621021c0.chunk.css",
-    "main.js": "/InteticsLab-2019-gh-pages/static/js/main.a1500ce8.chunk.js",
-    "main.js.map": "/InteticsLab-2019-gh-pages/static/js/main.a1500ce8.chunk.js.map",
-    "runtime-main.js": "/InteticsLab-2019-gh-pages/static/js/runtime-main.89f31892.js",
-    "runtime-main.js.map": "/InteticsLab-2019-gh-pages/static/js/runtime-main.89f31892.js.map",
-    "static/js/2.3c0b5141.chunk.js": "/InteticsLab-2019-gh-pages/static/js/2.3c0b5141.chunk.js",
-    "static/js/2.3c0b5141.chunk.js.map": "/InteticsLab-2019-gh-pages/static/js/2.3c0b5141.chunk.js.map",
-    "index.html": "/InteticsLab-2019-gh-pages/index.html",
-    "precache-manifest.c33ee2aa0237b9f6a166ba5c8a88a4d3.js": "/InteticsLab-2019-gh-pages/precache-manifest.c33ee2aa0237b9f6a166ba5c8a88a4d3.js",
-    "service-worker.js": "/InteticsLab-2019-gh-pages/service-worker.js",
-    "static/css/main.621021c0.chunk.css.map": "/InteticsLab-2019-gh-pages/static/css/main.621021c0.chunk.css.map"
+    "main.css": "/IL/static/css/main.621021c0.chunk.css",
+    "main.js": "/IL/static/js/main.a1500ce8.chunk.js",
+    "main.js.map": "/IL/static/js/main.a1500ce8.chunk.js.map",
+    "runtime-main.js": "/IL/static/js/runtime-main.69eac365.js",
+    "runtime-main.js.map": "/IL/static/js/runtime-main.69eac365.js.map",
+    "static/js/2.3c0b5141.chunk.js": "/IL/static/js/2.3c0b5141.chunk.js",
+    "static/js/2.3c0b5141.chunk.js.map": "/IL/static/js/2.3c0b5141.chunk.js.map",
+    "index.html": "/IL/index.html",
+    "precache-manifest.6ffc5330a4532e13ab8bcc05d985453c.js": "/IL/precache-manifest.6ffc5330a4532e13ab8bcc05d985453c.js",
+    "service-worker.js": "/IL/service-worker.js",
+    "static/css/main.621021c0.chunk.css.map": "/IL/static/css/main.621021c0.chunk.css.map"
   }
 }
