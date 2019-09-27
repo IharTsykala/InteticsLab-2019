@@ -24,7 +24,7 @@ const App = () => {
           order: {
             date: "21.09.2019",
             orderAmount: "100",
-            orderStatus: ["complied", "in progress", "canceled"]
+            orderStatus: "complied"
           }
         }
       ]
@@ -46,7 +46,7 @@ const App = () => {
           order: {
             date: "21.09.2019",
             orderAmount: "100",
-            orderStatus: ["complied", "in progress", "canceled"]
+            orderStatus: "complied"
           }
         }
       ]
@@ -68,7 +68,7 @@ const App = () => {
           order: {
             date: "21.09.2019",
             orderAmount: "100",
-            orderStatus: ["complied", "in progress", "canceled"]
+            orderStatus: "complied"
           }
         }
       ]
@@ -99,7 +99,7 @@ const App = () => {
         order: {
           date: "",
           orderAmount: "",
-          orderStatus: ["complied", "in progress", "canceled"]
+          orderStatus: ""
         }
       }
     ]
@@ -160,7 +160,6 @@ const App = () => {
             <div>
               <h2>Edit client</h2>
               <EditClientCards
-                editing={editing}
                 setEditing={setEditing}
                 currentUser={currentClient}
                 updateUser={updateUser}
@@ -183,6 +182,7 @@ const App = () => {
             currentClient={currentClient}
             editRow={editRow}
             deleteUser={deleteUser}
+            editing={editing}
           />
         </div>
       </div>

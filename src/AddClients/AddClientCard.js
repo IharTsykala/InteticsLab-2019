@@ -20,7 +20,7 @@ const AddClients = props => {
         order: {
           date: "",
           orderAmount: "",
-          orderStatus: ["complied", "in progress", "canceled"]
+          orderStatus: ""
         }
       }
     ]
@@ -72,6 +72,10 @@ const AddClients = props => {
       <p>
         If the client is already in the database, his (her) individual
         information will be shown in the "View Card" form.
+      </p>
+      <p className="example">
+        For an example of the application, enter "Name: Tanya" and Last Name:
+        Brown.
       </p>
     </form>
   );

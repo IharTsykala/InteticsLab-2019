@@ -1,3 +1,19 @@
+.editCard {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 27fr;
+}
+.editCard input {
+  display: grid;
+  font-size: 12px;
+}
+
+.editCard label {
+  display: grid;
+  font-size: 12px;
+}
+
 .editCard li {
   display: inline;
 }

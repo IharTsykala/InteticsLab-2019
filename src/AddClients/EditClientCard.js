@@ -48,7 +48,6 @@ const EditClientCard = props => {
         event.preventDefault();
 
         props.updateUser(user.id, user);
-        console.log(user);
       }}
     >
       <label>firstName</label>
@@ -125,21 +124,21 @@ const EditClientCard = props => {
       <input
         type="text"
         name="date"
-        value={specificationCar.date}
+        value={characteristicOrder.date}
         onChange={handleInputChangeOrder}
       />
       <label>orderAmount</label>
       <input
         type="text"
         name="orderAmount"
-        value={specificationCar.orderAmount}
+        value={characteristicOrder.orderAmount}
         onChange={handleInputChangeOrder}
       />
       <label>orderStatus</label>
       <input
         type="text"
         name="orderStatus"
-        value={specificationCar.orderStatus}
+        value={characteristicOrder.orderStatus}
         onChange={handleInputChangeOrder}
       />
       <ul>

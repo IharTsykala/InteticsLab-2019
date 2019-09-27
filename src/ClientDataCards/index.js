@@ -3,7 +3,6 @@ import React from "react";
 import "./index.css";
 
 const ClientCardsData = props => {
-  // console.log(props.currentClient);
   return (
     <div className="clientData">
       <div className="titleInfo">
@@ -41,14 +40,13 @@ const ClientCardsData = props => {
 
             <div>{user.car[0].order.date}</div>
             <div>{user.car[0].order.orderAmount}</div>
-            <div>{user.car[0].order.orderStatus[0]}</div>
+            <div>{user.car[0].order.orderStatus}</div>
 
             <div className="changeCard">
               <button
                 onClick={() => {
                   props.editRow(user);
                 }}
-                // className="button muted-button"
               >
                 Edit
               </button>

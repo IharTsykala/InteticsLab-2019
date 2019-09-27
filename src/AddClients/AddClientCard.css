@@ -1,3 +1,7 @@
 form {
   display: grid;
 }
+
+.example {
+  font-size: 12px;
+}

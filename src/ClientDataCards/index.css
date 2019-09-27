@@ -20,10 +20,6 @@ div.valueInfo {
 .changeCard {
   display: grid;
   position: absolute;
-  right: 300px;
+  left: 100px;
   top: 100px;
 }
-
-/* .changeCard button {
-  height: 50px;
-} */
